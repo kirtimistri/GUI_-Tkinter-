@@ -1,4 +1,4 @@
-# this is the simple singel login page by usking Tkinter 
+# this is the simple single login page by usking Tkinter 
 from tkinter import *
 root=Tk()
 root.geometry("955x560")
