@@ -19,15 +19,3 @@ l2.pack(side=LEFT,anchor=SW,padx=30,pady=10)
 box=Label(text="                                     ",bg="lightblue",relief=SUNKEN,borderwidth=40)
 box.pack(side=BOTTOM,anchor=E,fill=X,padx=10)
 root.mainloop()
-
-
-
-
-
-
-
-
-
-
-
-
