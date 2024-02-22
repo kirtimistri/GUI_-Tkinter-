@@ -1,7 +1,8 @@
 # here some attributes of Label and pack 
 from tkinter import *
 root=Tk()
-root.geometry("1200x1500")
+root.geometry("1500x1500")
+root.configure(bg='#333333',relief=GROOVE,borderwidth=30)
 root.title(" a short story for you ")
 # importent Label attributes
 title_label=Label(text=''' \nEmily is 8 years old. She lives in a big house. She has a huge room.

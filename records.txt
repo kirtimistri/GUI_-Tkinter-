@@ -1,3 +1,6 @@
 ('ghost', '9999999', 'feamle', '6666666', 'g pay', 1)
 ('', '', '', '', '', 0)
 ('lisa', '333333', 'female', '555555', 'cash', 1)
+('jivan', '7897875679', 'male', '65765085', 'cash', 1)
+('avinash', '797731945', 'male', '797731945', 'card', 1)
+('hehkjh', 'kksdkja', 'kjhiowe', 'kdjhffoai', 'skjdff', 1)
