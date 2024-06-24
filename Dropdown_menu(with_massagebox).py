@@ -47,8 +47,8 @@ mainmenu=Menu(root)
 #tearoff will remove ---- line from menu which saperates the menu for gui page
 m2=Menu(mainmenu,tearoff=0,bg='#292a29',fg='white')
 m2.add_command(label='New Text File',command=f1)
-m2.add_command(label='New file',command=f1)
-m2.add_separator()# this will add a line
+m2.add_command(label='New file',command=f1)#to make spacific action after hit a sapsific button we will use seperate function to build the  logic 
+m2.add_separator()# this will add a horizontal line
 m2.add_command(label='New Window',command=f1)
 m2.add_command(label='Open file',command=f1)
 m2.add_command(label='Open folder',command=f1)
