@@ -1,0 +1,56 @@
+from tkinter import *
+
+# to criate the main window 
+root=Tk()
+root.geometry("644x650")
+root.maxsize(644,650)
+root.title("calculater by kirti")
+root.configure(bg='black',borderwidth=10,relief=RAISED)
+
+# function to handle button event 
+def click(event):
+    global dispvalue
+    text=event.widget.cget("text")
+    print(text)
+    if text == '=':
+        if dispvalue.get().isdigit():
+          value=int(dispvalue.get())
+        else:
+          value=eval(dispvalue.get())
+          dispvalue.set(value)
+          screen.update()
+
+    elif text == 'C':
+         dispvalue.set('')
+         screen.update()
+    else :
+        dispvalue.set(dispvalue.get() + text)
+        screen.update()
+
+#display of calculator 
+dispvalue=StringVar()
+dispvalue.set("")
+screen=Entry(root,textvariable=dispvalue,font="lucida 50 bold",relief=SUNKEN,borderwidth=10,bg='light blue').pack(fill=X,padx=20,pady=20)
+
+#frames buttons of calculator 
+frame1=Frame(root,bg="white")
+frame1.pack()
+
+buttons = [["C", "%", "<-", "/"],
+           ["7", "8", "9", "*"],
+           ["4", "5", "6", "-"],
+           ["1", "2", "3", "+"],
+           ["00", "0", ".", "="]]
+
+#creating buttons using for loops and iterating the items in above list
+#itration of list of list logic is used
+for row in buttons:#itration of big list which contain another list 
+    f = Frame(root, bg="black", borderwidth=0)
+    f.pack(side=TOP, fill=X, padx=20)
+    for btn in row:#itration of small list element
+        b = Button(f, text=btn, font=("times new roman", 28, "bold"), relief=RAISED,
+                   width=6, height=1, bg="black", fg="lightblue",borderwidth=10,
+                   activebackground="black", activeforeground="white")
+        b.pack(side=LEFT)
+        b.bind("<Button-1>", click)
+root.mainloop()

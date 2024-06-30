@@ -29,7 +29,7 @@ root.config(menu=mainmenu,bg='#292a29')
 #add_cascade is used to fit menu in upper task bar
 mainmenu.add_cascade(label='File',menu=m2)
 
-m1=Menu(mainmenu,tearoff=0)
+m1=Menu(mainmenu,tearoff=0,bg='#292a29',fg='white')
 m1.add_command(label='Undo',command=f1)
 m1.add_command(label='Redo',command=f1)
 m1.add_separator()# this will add a line
